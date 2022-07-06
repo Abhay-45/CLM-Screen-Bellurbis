@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.container{
+    position: absolute;
+    width: 82%;
+    height: 100%        ;
+    left: 18%;
+    top: 42px;
+
+    background: #EFF3F6;
+    
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    
+}
+
+.form-heading{
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: column; */
+    justify-content: space-between;
+    /* align-items: center; */
+    align-content: center;
+    padding: 0px 15px;
+   
+
+    position: absolute;
+    width: 90%;
+    /* width: 976px; */
+    height: 60px;
+    
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+}
+
+.form-heading h3{
+   
+    /* padding: 5px;
+    padding-top: 15px;
+    padding-left: 20px; */
+
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.input{
+    display: flex;
+    /* align-self: flex-end; */
+    justify-content: space-between;
+}
+
+.input label{
+    padding-right: 10px;
+}

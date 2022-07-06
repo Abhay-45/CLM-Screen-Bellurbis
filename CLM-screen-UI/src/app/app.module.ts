@@ -6,18 +6,22 @@ import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/header/header.component';
-import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component'
+import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
+import { AddNewInvestorFormComponent } from './components/add-new-investor-form/add-new-investor-form.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    NavigationBarComponent
+    NavigationBarComponent,
+    AddNewInvestorFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
