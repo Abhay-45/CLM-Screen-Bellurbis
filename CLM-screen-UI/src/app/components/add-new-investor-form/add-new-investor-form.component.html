@@ -1,15 +1,152 @@
 <div class="container">
-    <div class="form">
-        <div class="form-heading">
-            <div>
-                <h3>Add New Investor</h3>
-            </div>
-            
-            <div class="input">
-                <label for="investor-name">Investor's Name</label>
-                <input type="text" name="investor-name" placeholder="Enter Name">
-            </div>
+
+    <div class="form-heading">
+        <div class="form-heading-child">
+            <h3>Add New Investor</h3>
         </div>
+       
+        <div>
+            <label>Investor's Name</label>
+            <input type="text" class="input" placeholder="Enter Name">
+        </div>
+    </div>
+
+    <div class="heading">
+        <h3>Set Criteria</h3>
+    </div>
+    <div class="input_field_large">
+
+        <div class="field1">
+            <label class="label">1. Customer Criteria</label>
+        </div>
+
+        <div class="field2">
+            <label class="label">1.1. Customer Category</label>
+
+            <input type="radio" class="radio-button" id="individual" name="customer_category" value="individual">
+             <label for="individual" class="radio-button-label-2">Individual</label>
+
+            <input type="radio" class="radio-button" id="Non-Individual" name="customer_category" value="Non-Individual">
+            <label for="Non-Individual" class="radio-button-label-2">Non-Individual</label>
+
+        </div>
+
+        <div class="field3">
+            <label class="label">1.2. Customer Type</label>
+
+            <input type="radio" class="radio-button" id="senp" name="customer_type" value="senp">
+            <label for="senp" class="radio-button-label-2">SENP</label>
+
+            <input type="radio" class="radio-button" id="sep" name="customer_type" value="sep">
+            <label for="sep" class="radio-button-label-2">SEP</label>
+
+            <input type="radio" class="radio-button" id="private limited" name="customer_type" value="private limited">
+            <label for="private limited" class="radio-button-label-2">Private Limited</label>
+
+            <input type="radio" class="radio-button" id="llp" name="customer_type" value="llp">
+            <label for="llp" class="radio-button-label-2">LLP</label>
+
+            <input type="radio" class="radio-button" id="partnership" name="customer_type" value="partnership">
+            <label for="partnership" class="radio-button-label-2">Partnership</label>
+
+        </div>
+
+    </div>
+
+    <div class="input_field">
+        <label class="label">2. Balance Tenor</label>
+    </div>
+
+    <div class="input_field">
+        <label class="label">3. Rate of Interest</label>
+        <p>%</p>
+        <input type="text" class="input" placeholder="Enter Min.">
+        <input type="text" class="input" placeholder="Enter Max.">
+    </div>
+
+    <div class="input_field">
+        <label class="label">4. LTV</label>
+        <p>%</p>
+        <input type="text" class="input" placeholder="Enter Min.">
+        <input type="text" class="input" placeholder="Enter Max.">
+    </div>
+
+    <div class="input_field">
+        <label class="label">5. Ticket Size (Loan Amount)</label>
+        <p>&#8377;</p>
+        <input type="text" class="input_type_2" placeholder="Enter Min.">
+        <input type="text" class="input_type_2" placeholder="Enter Max.">
+    </div>
+
+    <div class="input_field">
+        <label class="label">6. Bureau Score</label>
+        <p>Above</p>
+        <input type="text" class="input_type_2" placeholder="Enter Min.">
+    </div>
+
+    <div class="input_field">
+        <label class="label">7. Product</label>
+
+        <input type="radio" class="radio-button" id="hl" name="bureau_score" value="HL">
+        <label for="hl" class="radio-button-label">HL</label>
+
+        <input type="radio" class="radio-button" id="lap" name="bureau_score" value="LAP">
+        <label for="lap" class="radio-button-label">LAP</label>
+    </div>
+
+    <div class="input_field">
+        <label class="label">8. Income Amount</label>
+        <p>&#8377;</p>
+        <input type="text" class="input_type_2" placeholder="Enter Min.">
+    </div>
+
+    <div class="input_field">
+        <label class="label">9. FOIR</label>
+        <p>%</p>
+        <input type="text" class="input" placeholder="Enter Value">
+    </div>
+
+    <div class="input_field">
+        <label class="label">10. Age</label>
+        <p>Years</p>
+        <input type="text" class="input" placeholder="Enter Min.">
+        <input type="text" class="input" placeholder="Enter Max.">
+    </div>
+
+    <div class="input_field">
+        <label class="label">11. City Classification</label>
+
+        <input type="radio" class="radio-button" id="metro" name="city_classification" value="metro">
+        <label for="metro" class="radio-button-label">Metro</label>
+
+        <input type="radio" class="radio-button" id="non-metro" name="city_classification" value="non-metro">
+        <label for="non-metro" class="radio-button-label">Non-Metro</label>
+
+        <input type="radio" class="radio-button" id="Tier1" name="city_classification" value="Tier1">
+        <label for="Tier1" class="radio-button-label">Tier 1</label>
+
+        <input type="radio" class="radio-button" id="Tier2" name="city_classification" value="Tier2">
+        <label for="Tier2" class="radio-button-label">Tier 2</label>
+
+        <input type="radio" class="radio-button" id="Tier3" name="city_classification" value="Tier3">
+        <label for="Tier3" class="radio-button-label">Tier 3</label>
+
+    </div>
+
+    <div class="input_field">
+        <label class="label">12. Construction Stage</label>
+    </div>
+
+    <div class="input_field">
+        <label class="label">13. DPD</label>
+
+        <input type="text" class="input" placeholder="Enter Min.">
+        <input type="text" class="input" placeholder="Enter Max.">
+
+    </div>
+
+    <div class="save-button">
+        <button mat-flat-button><h5> <h5 id="checkmark">&#10003;</h5>  <h5 id="save-text">Save New Investor</h5></h5></button>
     </div>
 
 </div>
