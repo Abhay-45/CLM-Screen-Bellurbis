@@ -1,5 +1,5 @@
-import { Component } from '@angular/core';
-import {faYoutube} from '@fortawesome/free-brands-svg-icons'
+import { Component, OnInit } from '@angular/core';
+import {MatTableModule} from '@angular/material/table';
 
 export interface PeriodicElement {
   name: string;
@@ -22,12 +22,18 @@ const ELEMENT_DATA: PeriodicElement[] = [
 ];
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-data-table',
+  templateUrl: './data-table.component.html',
+  styleUrls: ['./data-table.component.css']
 })
-export class AppComponent {
+export class DataTableComponent implements OnInit {
+
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
   dataSource = ELEMENT_DATA;
+  constructor() {
+
+   }
+  ngOnInit(): void {
+  }
 
 }
