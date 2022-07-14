@@ -1,0 +1,237 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+::placeholder {
+    letter-spacing: 0.08em;
+    font-size: 14px;
+    line-height: 17px;
+    color: #7F8F9D;
+    background: #EFF3F6;
+}
+
+.container {
+    background: #EFF3F6;
+    width: 82%;
+    height: 1500px;
+    margin-left: 18%;
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.heading {
+    width: 92%;
+    height: 64px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+
+}
+
+.heading-title h3 {
+    font-size: 24px;
+    line-height: 29px;
+    padding: 19px 0px 0px 40px;
+    font-weight: 500;
+    color: #313942;
+
+}
+
+.applicant-info {
+    /* position: relative; */
+    width: 92%;
+    height: 147px;
+    background: #FFFFFF;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+}
+
+.applicant-info div {
+    display: flex;
+    flex-direction: row;
+
+    padding: 1.5px 0px;
+    padding-left: 20px;
+}
+
+.other-details{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    margin: 20px 0px;
+    color: #313942;
+
+}
+
+#top-div {
+    padding-top: 20px;
+}
+
+.applicant-info div label {
+    color: #313942;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    width: 140px;
+    padding-top: 5px;
+}
+
+
+input {
+    width: 204px;
+    height: 30px;
+    background: #EFF3F6;
+    border-radius: 8px;
+    padding-left: 15px;
+    border: none;
+    margin-right: 10px;
+}
+
+.mat-expansion-panel {
+   margin: 5px 0px; 
+
+
+}
+
+::ng-deep .mat-expansion-panel-body {
+    padding: 0;
+    margin: 0;
+    background: #FFF9F9;
+}
+
+
+
+.mat-expansion-panel-header {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+}
+
+
+
+
+.cd-form-container {
+    width: 100%;
+    height: 350px;
+   
+    padding: 10px 0px;
+}
+
+.split {
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    padding: 10px;
+}
+
+.left {
+    left: 0;
+    border-right: 2px solid rgba(127, 143, 157, 0.26);
+}
+
+.right {
+    right: 0;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: row;
+    padding: 5px
+}
+
+.form-input label {
+    display: flex;
+    align-items: center;
+    width: 270px;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 17px;
+    color: #5C7893;
+}
+
+.form-input input[type="text number"] {
+    width: 220px;
+    height: 30px;
+}
+
+.form-input input[type="date"] {
+    width: 205px;
+    height: 30px;
+    -webkit-padding-end: 10px;
+}
+
+.form-input input[type="radio"] {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    font-size: 10px;
+    line-height: 14px;
+}
+
+.form-input input[type="file"]{
+    display: flex;
+    align-items: center;
+    margin-left: 200px;
+    background-color: #EFF3F6;
+    
+    
+}
+
+.label-radio{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.add-form-container {
+    width: 100%;
+    height: 150px;
+   
+    padding: 10px 0px;
+}
+
+.kyc-form-container{
+    width: 100%;
+    height: 50px;
+}
+
+.loan-form-container{
+    width: 100%;
+    height: 650px;
+}
+
+.property-form-container{
+    width: 100%;
+    height: 130px;
+    
+}
+
+.documents-form-container{
+    padding-top: 10px;
+}
+
+
+
+app-button-common{
+    margin-top: 4px;
+    margin-left: 78%;
+   
+}
+
+

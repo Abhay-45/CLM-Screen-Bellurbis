@@ -134,6 +134,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
+    align-items: center;
     padding-left: 20px;
     height: 50px
  }
@@ -232,49 +233,4 @@
     line-height: 17px;
     color: #313942;
 }
-
-.save-button{
-    display: flex;
-    justify-content: end;
-
-   
-    
-}
-
-.save-button button h5{
-    font-size: 12px;
-    line-height: 35px;
-    padding: 0px 10px 0px 0px ;
-    
-    display: inline-flex;
-    align-items: center;
-    text-align: center;
-    background: #637484;
-    border-radius: 4px;
-    color: #FFF;
-    
-}
-
-#checkmark{
-    display: flex;
-    height: auto ;
-    width: auto;
-    
-    padding-left: 15px;
-    padding-right: 15px;
-    background: #009CDF;
-border-radius: 4px 0px 0px 4px;
-
-
-}
-
-#save-text{
-    padding-left: 30px;
-    padding-right: 20px;
-}
-
-
-
-
-
 

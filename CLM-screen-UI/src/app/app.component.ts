@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {faYoutube} from '@fortawesome/free-brands-svg-icons'
+import {faClipboard} from '@fortawesome/free-regular-svg-icons'
 
 
 
@@ -9,6 +10,9 @@ import {faYoutube} from '@fortawesome/free-brands-svg-icons'
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   faYoutube = faYoutube;
   title = 'CLM-screen-UI';
+
+
 }

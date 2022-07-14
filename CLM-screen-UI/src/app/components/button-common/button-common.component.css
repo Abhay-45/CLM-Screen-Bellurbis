@@ -1,0 +1,46 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    width: 0;
+   
+}
+
+.save-button button{ 
+    
+    padding: 0;
+    height: 32px;
+    
+    width: auto;
+}
+
+.save-button h5{
+    display: inline;
+    padding-top: 5px;
+    font-size: 12px;
+    
+}
+
+#checkmark{
+    background: #009CDF;
+   display: inline-block;
+   color: white;
+   
+   width: 35px;
+   height: 100%;
+   font-size: 15px;
+}
+
+#save-text{
+    display: inline-block;
+    
+    background: #637484;
+    color: #FFF;
+    height: 100%;
+    
+    width: 125px;
+
+}
+
+
