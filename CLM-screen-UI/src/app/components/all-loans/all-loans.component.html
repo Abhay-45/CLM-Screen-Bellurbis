@@ -1,0 +1,57 @@
+<div class="container-loans">
+    <div class="loan-stat">
+        <div class="heading">
+            <h1 class="title">All loans</h1>
+        </div>
+        <div class="loan-details">
+            <div class="loan-detail-child">
+                <p class="title-child">Number of Loans</p>
+                <i class="title-child-detail">35</i>
+            </div>
+            <div class="loan-detail-child">
+                <p class="title-child">Total Loan Value</p>
+                <i class="title-child-detail">29 Cr</i>
+            </div>
+        </div>
+    </div>
+    <div class="loan-search">
+        <div class="search-bar">
+            <input class="search-bar-child" type="text" placeholder="Search..." autocomplete="off">
+        </div>
+        <div class="date-pick">
+            <button class="date">
+                All Time
+            </button>
+        </div>
+    </div>
+</div>
+<mat-accordion class="investor-expand">
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="panel-closed-content">
+            <p>Investor 1</p>
+            <h1>4 loans|1.6 Cr</h1>
+        </mat-expansion-panel-header>
+        <div class="table-on-expansion"></div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="panel-closed-content">
+            <p>Investor 2</p>
+            <h1>4 loans|1.6 Cr</h1>
+        </mat-expansion-panel-header>
+        <div class="table-on-expansion"></div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="panel-closed-content">
+            <p>Investor 3</p>
+            <h1>4 loans|1.6 Cr</h1>
+        </mat-expansion-panel-header>
+        <div class="table-on-expansion"></div>
+    </mat-expansion-panel>
+    <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+        <mat-expansion-panel-header class="panel-closed-content">
+            <p>Investor 4</p>
+            <h1>4 loans|1.6 Cr</h1>
+        </mat-expansion-panel-header>
+        <div class="table-on-expansion"></div>
+    </mat-expansion-panel>
+</mat-accordion>

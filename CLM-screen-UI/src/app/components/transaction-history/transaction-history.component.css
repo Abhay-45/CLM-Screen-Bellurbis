@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.container{
+    position: absolute;
+    width: 82%;
+    height: 100%        ;
+    left: 18%;
+    top: 42px;
+    background: #EFF3F6;  
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin-top: 21px;
+    margin-left: 37px;
+    margin-right: 37px;
+}
+
+.heading h3 { 
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+    display: flex;
+    align-items: center;
+    color: #313942;
+
+}
+
+.investers {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.investors-child { 
+    width: 236px;
+    height: 98px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    margin-left: 7px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product p {
+    margin-right: 10px;
+}
+
+

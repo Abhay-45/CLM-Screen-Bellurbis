@@ -13,6 +13,10 @@ import {MatIconModule} from '@angular/material/icon';
 import { DataTableComponent } from './components/data-table/data-table.component'
 import {MatTableModule} from '@angular/material/table';
 import { AddNewInvestorFormComponent } from './components/add-new-investor-form/add-new-investor-form.component';
+import { AllLoansComponent } from './components/all-loans/all-loans.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { TransactionHistoryComponent } from './components/transaction-history/transaction-history.component';
+import { AllQueriesComponent } from './components/all-queries/all-queries.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +26,9 @@ import { AddNewInvestorFormComponent } from './components/add-new-investor-form/
     AddNewInvestorFormComponent,
     InvestorsCriteriaComponent,
     DataTableComponent,
+    AllLoansComponent,
+    TransactionHistoryComponent,
+    AllQueriesComponent,
   ],
   imports: [
     BrowserModule,
@@ -30,7 +37,8 @@ import { AddNewInvestorFormComponent } from './components/add-new-investor-form/
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    MatTableModule
+    MatTableModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

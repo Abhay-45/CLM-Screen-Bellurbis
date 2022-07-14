@@ -1,0 +1,52 @@
+<div class="container">
+    <div class="queries">
+        <div class="all-queries-card">
+            <div class="title">
+                <h1>All Queries</h1>
+            </div>
+            <div class="query-response">
+                <div class="query-answered">
+                    <p>Answered</p>
+                    <i>64</i>
+                </div>
+                <div class="query-answered">
+                    <p>Unanswered</p>
+                    <i>22</i>
+                </div>
+            </div>
+        </div>
+        <div class="all-queries-graph">
+
+        </div>
+    </div>
+    <mat-accordion class="investor-expand">
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header class="panel-closed-content">
+                <p>Investor 1</p>
+                
+            </mat-expansion-panel-header>
+            <div class="table-on-expansion"></div>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header class="panel-closed-content">
+                <p>Investor 2</p>
+               
+            </mat-expansion-panel-header>
+            <div class="table-on-expansion"></div>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header class="panel-closed-content">
+                <p>Investor 3</p>
+            
+            </mat-expansion-panel-header>
+            <div class="table-on-expansion"></div>
+        </mat-expansion-panel>
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+            <mat-expansion-panel-header class="panel-closed-content">
+                <p>Investor 4</p>
+          
+            </mat-expansion-panel-header>
+            <div class="table-on-expansion"></div>
+        </mat-expansion-panel>
+    </mat-accordion>
+</div>
