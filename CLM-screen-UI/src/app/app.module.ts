@@ -10,8 +10,9 @@ import {InvestorsCriteriaComponent} from './components/investors-criteria/invest
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 import {MatButtonModule} from '@angular/material/button'
 import {MatIconModule} from '@angular/material/icon';
+import {CdkTableModule} from '@angular/cdk/table';
 
-
+import {MatPaginatorModule} from '@angular/material/paginator';
 import { DataTableComponent } from './components/data-table/data-table.component'
 import {MatTableModule} from '@angular/material/table';
 import { AddNewInvestorFormComponent } from './components/add-new-investor-form/add-new-investor-form.component';
@@ -26,7 +27,9 @@ import { DashboardDisplayWidgetsComponent } from './components/dashboard-display
 import { CreateNewLoanFormComponent } from './components/create-new-loan-form/create-new-loan-form.component';
 
 import {MatDividerModule} from '@angular/material/divider';
-
+import { ApprovalRequestsComponent } from './components/approval-requests/approval-requests.component';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { TableComponent } from './components/table/table.component';
 
 
 
@@ -48,8 +51,12 @@ import {MatDividerModule} from '@angular/material/divider';
     ButtonCommonComponent,
     DashboardDisplayWidgetsComponent,
     CreateNewLoanFormComponent,
+    ApprovalRequestsComponent,
+    TableComponent,
+    
 
   ],
+
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -60,9 +67,9 @@ import {MatDividerModule} from '@angular/material/divider';
     MatTableModule,
     MatExpansionModule,
     MatDividerModule,
-    
-    
-
+    MatButtonToggleModule,
+    MatPaginatorModule,
+    CdkTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
