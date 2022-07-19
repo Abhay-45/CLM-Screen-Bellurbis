@@ -28,7 +28,6 @@
 
 .form-heading{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     /* justify-content: space-between;
     align-content: center;
@@ -156,6 +155,11 @@
     border-radius: 8px;
 }
 
+label {
+    display: inline-block;
+    align-self: center;
+}
+
 .label{
     width: 300px;
     display: flex;
@@ -166,6 +170,8 @@
     padding-left: 20px;
     color: #313942;
 }
+
+
 
 .input_field p{
     font-weight: 600;

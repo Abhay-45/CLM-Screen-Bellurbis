@@ -31,15 +31,15 @@ import { MatDividerModule } from '@angular/material/divider';
 
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { TableComponent } from './components/table/table.component';
-
+import { AddNewInvestorComponent } from './pages/add-new-investor/add-new-investor.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { InvestorsComponent } from './pages/investors/investors.component';
 import { ApprovalRequestsComponent } from './pages/approval-requests/approval-requests.component';
 import { QueriesComponent } from './pages/queries/queries.component';
 import { UploadLoansComponent } from './pages/upload-loans/upload-loans.component';
 import { DealHistoryComponent } from './pages/deal-history/deal-history.component';
-import { AddNewInvestorComponent } from './pages/add-new-investor/add-new-investor.component';
 import { CreateNewLoanComponent } from './pages/create-new-loan/create-new-loan.component';
+import { AllLoansPageComponent } from './pages/all-loans-page/all-loans-page.component';
 
 
 
@@ -55,7 +55,7 @@ import { CreateNewLoanComponent } from './pages/create-new-loan/create-new-loan.
     AllLoansComponent,
     TransactionHistoryComponent,
     AllQueriesComponent,
-
+    AddNewInvestorComponent,
     ButtonCommonComponent,
     DashboardDisplayWidgetsComponent,
     CreateNewLoanFormComponent,
@@ -70,8 +70,9 @@ import { CreateNewLoanComponent } from './pages/create-new-loan/create-new-loan.
     QueriesComponent,
     UploadLoansComponent,
     DealHistoryComponent,
-    AddNewInvestorComponent,
+
     CreateNewLoanComponent,
+      AllLoansPageComponent,
 
 
   ],
@@ -86,7 +87,6 @@ import { CreateNewLoanComponent } from './pages/create-new-loan/create-new-loan.
     MatTableModule,
     MatExpansionModule,
     MatDividerModule,
-
     MatButtonToggleModule,
     MatPaginatorModule,
     CdkTableModule,

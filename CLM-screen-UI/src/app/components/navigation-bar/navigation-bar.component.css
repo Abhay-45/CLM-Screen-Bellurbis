@@ -11,7 +11,7 @@
 }
 
 .navigation-bar{
-    position: absolute;
+    position: fixed;
     width: 18%;
     height: 100%;
     left: 0px;
