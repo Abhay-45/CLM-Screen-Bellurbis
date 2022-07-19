@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {faYoutube} from '@fortawesome/free-brands-svg-icons'
 import {faClipboard} from '@fortawesome/free-regular-svg-icons'
 import {Employee} from './employee'
 import {Element} from './elements'
 import { Column } from './components/table/column';
+import { Chart } from 'node_modules/chart.js';
 
   const tableColumns: Array<Column> = [
   { columnDef: 'position', header: 'Position', cell: (element: Record<string, any>) => `${element['position']}` },
@@ -29,7 +30,12 @@ import { Column } from './components/table/column';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
+
+  ngOnInit(): void {
+   
+  }
+
   faYoutube = faYoutube;
   title = 'CLM-screen-UI';
   tableData = tableData;
