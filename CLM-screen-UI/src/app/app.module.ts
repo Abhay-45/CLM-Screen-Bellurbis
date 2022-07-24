@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HeaderComponent } from './components/header/header.component';
 import { NavigationBarComponent } from './components/navigation-bar/navigation-bar.component';
 import { InvestorsCriteriaComponent } from './components/investors-criteria/investors-criteria.component'
@@ -25,13 +24,14 @@ import { CreateNewLoanFormComponent } from './components/create-new-loan-form/cr
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { TableComponent } from './components/table/table.component';
+import { ApprovalRequestsComponent } from './components/approval-requests/approval-requests.component';
 
 import { AddNewInvestorComponent } from './pages/add-new-investor/add-new-investor.component';
 
 
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { InvestorsComponent } from './pages/investors/investors.component';
-import { ApprovalRequestsComponent } from './pages/approval-requests/approval-requests.component';
+
 import { QueriesComponent } from './pages/queries/queries.component';
 import { UploadLoansComponent } from './pages/upload-loans/upload-loans.component';
 import { DealHistoryComponent } from './pages/deal-history/deal-history.component';
@@ -41,8 +41,13 @@ import { AllLoansPageComponent } from './pages/all-loans-page/all-loans-page.com
 
 import { DashboardPiechartComponent } from './components/dashboard-piechart/dashboard-piechart.component';
 import { QueriesGraphComponent } from './components/queries-graph/queries-graph.component';
+import { ApprovalRequestsPageComponent } from './pages/approval-requests-page/approval-requests-page.component';
+import { UploadLoansBodyComponent } from './components/upload-loans-body/upload-loans-body.component';
+import {MatFormFieldModule} from '@angular/material/form-field';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
 
-
+import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -62,23 +67,27 @@ import { QueriesGraphComponent } from './components/queries-graph/queries-graph.
     ButtonCommonComponent,
     DashboardDisplayWidgetsComponent,
     CreateNewLoanFormComponent,
-    ApprovalRequestsComponent,
+
     TableComponent,
     DashboardComponent,
     InvestorsComponent,
-    ApprovalRequestsComponent,
+
     QueriesComponent,
     UploadLoansComponent,
     DealHistoryComponent,
 
     CreateNewLoanComponent,
 
-      AllLoansPageComponent,
+    AllLoansPageComponent,
 
 
 
     DashboardPiechartComponent,
     QueriesGraphComponent,
+    ApprovalRequestsPageComponent,
+    UploadLoansBodyComponent,
+    ApprovalRequestsComponent
+    
 
   ],
 
@@ -95,7 +104,12 @@ import { QueriesGraphComponent } from './components/queries-graph/queries-graph.
     MatButtonToggleModule,
     MatPaginatorModule,
     CdkTableModule,
-
+    MatFormFieldModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    
+    MatInputModule,
+    
   ],
 
   providers: [],

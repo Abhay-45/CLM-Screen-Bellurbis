@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./create-new-loan-form.component.css']
 })
 export class CreateNewLoanFormComponent implements OnInit {
-
+  faPlus = faPlus;
   constructor() { }
 
   ngOnInit(): void {

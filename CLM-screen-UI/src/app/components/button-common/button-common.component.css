@@ -1,45 +1,48 @@
-
-
 *{
     padding: 0;
     margin: 0;
     width: 0;
-   
 }
 
 .save-button button{ 
-    
     padding: 0;
-    height: 32px;
-    
-    width: auto;
+    height: 32px; 
+    width:fit-content;
 }
 
-.save-button h5{
+/* .save-button h5{
     display: inline;
     padding-top: 5px;
     font-size: 12px;
     
+} */
+
+fa-icon{
+    padding: 0;
+    margin: 0;
 }
 
 #checkmark{
+    padding: 0;
+    margin: 0;
+    margin-top: -12px;
     background: #009CDF;
-   display: inline-block;
-   color: white;
-   
-   width: 35px;
-   height: 100%;
-   font-size: 15px;
+    display: inline-block;
+    color: white;
+    width: 37px;
+    height: 100%;
+    font-size: 15px;
+    border-radius: 4px 0px 0px 4px;
 }
 
 #save-text{
     display: inline-block;
-    
     background: #637484;
     color: #FFF;
-    height: 100%;
-    
-    width: 125px;
+    height: 100%; 
+    width: fit-content;
+    border-radius: 0px 4px 4px 0px;
+    padding: 5px 20px;
 
 }
 

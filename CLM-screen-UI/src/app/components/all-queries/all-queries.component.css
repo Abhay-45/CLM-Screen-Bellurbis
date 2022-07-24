@@ -6,104 +6,62 @@
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Lato';
 
 }
 
-.container {
-    position: absolute;
+.container{
+    background: #EFF3F6;
     width: 82%;
     height: 100%;
-    left: 18%;
-    top: 42px;
-    background: #EFF3F6;
+    margin-left: 18%;
+    padding-top: 42px;
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .queries {
     display: flex;
+    width: 90%;
+    height: 32%;
     justify-content: space-between;
-    margin-top: 30px;
-    margin-right: 38px;
+    margin-top: 50px;
+    
+    
 }
 
 .all-queries-card {
-    width: 584px;
-    height: 218px;
+    width: 60%;
+    height: 100%;
     background: #FFFFFF;
     border-radius: 8px;
-    margin-left: 15px;
     display: flex;
     flex-direction: column;
 }
 
-.mat-form-field+.mat-form-field {
-    margin-left: 8px;
-}
-
-.investor-expand {
-    width: 980px;
-    height: 51px;
-    background: #EFF3F6;
-    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.07);
-    border-radius: 8px;
-    margin-top: 20px;
-    margin-left: 15px;
-}
-.table-on-expansion {
-    position: absolute;
-    width: 980px;
-    height: 245px;
-    background: #FFF9F9;
-    border-radius: 8px;
-}
-
-.panel-closed-content p {
-    width: 63px;
-    height: 15px;
-    margin-top: 13px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
+.upper{
+    flex: 1;
     display: flex;
-    align-items: center;
-
-    color: #313942;
+    padding-left: 40px;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
-.panel-closed-content h1 {
-
-    width: 160px;
-    height: 21px;
-    margin-top: 8px;
-    font-family: 'Lato';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    display: flex;
-    align-items: center;
-    margin-left: 20px;
-    color: #F66B4E;
+.lower{
+    flex: 1;
 }
+
 .title h1 {
-
-    width: 128px;
-    height: 15px;
-    margin-top: 30px;
-    margin-left: 30px;
-
+    padding: 0;
+    margin: 0;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
-    display: flex;
-    align-items: center;
-
+    padding-top: 10px;
     color: #313942;
 }
 
@@ -112,49 +70,65 @@
 }
 
 .all-queries-graph {
-    width: 360px;
-    height: 222px;
-    background: #FFFFFF;
+    height: 100%;
     box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.07);
     border-radius: 8px;
     margin-left: 35px;
 }
+ app-queries-graph{
+    height: 100%;
+ }
 
 .query-answered {
     display: flex;
-    margin-top: 20px;
-    margin-left: 30px;
+    align-items: baseline;
 }
 
 .query-answered p {
-    height: 19px;
-
-
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    display: flex;
-    align-items: center;
-
     color: #566270;
+    padding-right: 10px;
 }
 
 .query-answered i {
-
-    width: 54px;
-    height: 23px;
-    margin-left: 15px;
-    margin-bottom: 5px;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 26px;
-    display: flex;
-    align-items: center;
-
     color: #F66B4E;
+    padding-right: 30px;
 
 }
+
+.investor-expand {
+    width: 90%;
+    height: 51px;
+    background: #EFF3F6;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    margin-top: 20px;
+    
+}
+
+.mat-expansion-panel {
+    margin: 5px 0px; 
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.07);
+ }
+ 
+ ::ng-deep .mat-expansion-panel-body {
+     padding: 0;
+     margin: 0;
+     background: #FFF9F9;
+ }
+
+.mat-expansion-panel-header {
+     background: #FFFFFF;
+     box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.07);
+     border-radius: 8px;
+     height: 55px;
+ }

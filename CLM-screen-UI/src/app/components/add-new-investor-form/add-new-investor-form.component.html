@@ -14,6 +14,7 @@
     <div class="heading">
         <h3>Set Criteria</h3>
     </div>
+
     <div class="input_field_large">
 
         <div class="field1">
@@ -21,7 +22,7 @@
         </div>
 
         <div class="field2">
-            <label class="label">1.1. Customer Category</label>
+            <label class="label field-heading" >1.1. Customer Category</label>
 
             <input type="radio" class="radio-button" id="individual" name="customer_category" value="individual">
              <label for="individual" class="radio-button-label-2">Individual</label>
@@ -32,7 +33,7 @@
         </div>
 
         <div class="field3">
-            <label class="label">1.2. Customer Type</label>
+            <label class="field-heading label">1.2. Customer Type</label>
 
             <input type="radio" class="radio-button" id="senp" name="customer_type" value="senp">
             <label for="senp" class="radio-button-label-2">SENP</label>
@@ -66,16 +67,16 @@
 
     <div class="input_field">
         <label class="label">4. LTV</label>
-        <span>%</span>
+        <p>%</p>
         <input type="text" class="input" placeholder="Enter Min.">
         <input type="text" class="input" placeholder="Enter Max.">
     </div>
 
     <div class="input_field">
         <label class="label">5. Ticket Size (Loan Amount)</label>
-        <div >
+        <p >
             &#8377;
-        </div>
+        </p>
         
         <input type="text" class="input_type_2" placeholder="Enter Min.">
         <input type="text" class="input_type_2" placeholder="Enter Max.">
@@ -147,6 +148,15 @@
         <input type="text" class="input" placeholder="Enter Max.">
 
     </div>
+
+    <div class="submit-form">
+        <div class="empty-space"></div>
+        <div class="save-button">
+            <app-button-common buttonText="Save Form" [buttonIcon]="faCheck"></app-button-common>
+        </div>
+       
+    </div>
+    
 
     
 

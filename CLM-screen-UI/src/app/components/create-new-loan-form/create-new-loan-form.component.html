@@ -1,6 +1,6 @@
-<div>
+<!-- <div>
     <app-header></app-header>
-</div>
+</div> -->
 <div class="container">
     <div class="heading">
         <div class="heading-title">
@@ -57,7 +57,7 @@
 
 
     <mat-accordion>
-        <mat-expansion-panel>
+        <mat-expansion-panel class="mat-elevation-z0">
 
             <mat-expansion-panel-header expandedHeight="50px">
                 <mat-panel-title>
@@ -92,14 +92,19 @@
                     <div class="form-input">
                         <label>6. PSL/Non-PSL</label>
 
+                        <div class="radio">
+                            
+                            <div class="radio-options">
+                                <input type="radio" name="PSL/Non-PSL">
+                                <p for="PSL" class="label-radio">PSL </p>
+                            </div>
+                            
+                            <div class="radio-options">
+                                <input type="radio" name="PSL/Non-PSL">
+                                <p for="Non-PSL" class="label-radio">Non-PSL </p>
+                            </div>
 
-                        <input type="radio" name="PSL/Non-PSL">
-                        <label for="PSL" class="label-radio">PSL </label>
-
-                        <input type="radio" name="PSL/Non-PSL">
-                        <label for="Non-PSL" class="label-radio">Non-PSL </label>
-
-
+                        </div>
 
                     </div>
                     <div class="form-input">
@@ -139,14 +144,30 @@
                     <div class="form-input">
                         <label>14. Gender</label>
 
-                        <input type="radio" name="Gender">
-                        <label for="Male" class="label-radio">Male </label>
+                        <div class="radio">
+                            <div class="radio-options">
+                                <input type="radio" name="Gender">
+                                <p for="Male" class="label-radio">Male </p>
+                            </div>
 
-                        <input type="radio" name="Gender">
-                        <label for="Female" class="label-radio">Female </label>
+                            <div class="radio-options">
+                                <input type="radio" name="Gender">
+                                <p for="Female" class="label-radio">Female </p>
+                            </div>
 
-                        <input type="radio" name="Gender">
-                        <label for="Other" class="label-radio">Other </label>
+                            <div class="radio-options">
+                                <input type="radio" name="Gender">
+                                <p for="Other" class="label-radio">Other </p>
+                            </div>
+                            
+
+                            
+
+                            
+
+                        </div>
+
+                        
 
                     </div>
                     <div class="form-input">
@@ -166,7 +187,7 @@
 
         <!-- Address Expansion panel -->
 
-        <mat-expansion-panel>
+        <mat-expansion-panel class="mat-elevation-z0">
 
             <mat-expansion-panel-header expandedHeight="50px">
                 <mat-panel-title>
@@ -188,11 +209,21 @@
                     <div class="form-input">
                         <label>3. Metro/Non-Metro</label>
 
-                        <input type="radio" name="Metro/Non-Metro">
-                        <label for="Metro" class="label-radio">Metro </label>
+                        <div class="radio">
+                            <div class="radio-options">
+                                <input type="radio" name="Metro/Non-Metro">
+                                <p for="Metro" class="label-radio">Metro </p>
+                            </div>
 
-                        <input type="radio" name="Metro/Non-Metro">
-                        <label for="Non-Metro" class="label-radio">Non-Metro </label>
+                            <div class="radio-options">
+                                <input type="radio" name="Metro/Non-Metro">
+                                <p for="Non-Metro" class="label-radio">Non-Metro </p>
+                            </div>
+
+                        </div>
+                        
+
+                        
                     </div>
                 </div>
 
@@ -218,7 +249,7 @@
 
         <!-- KYC Details -->
 
-        <mat-expansion-panel>
+        <mat-expansion-panel class="mat-elevation-z0">
             <mat-expansion-panel-header expandedHeight="50px">
                 <mat-panel-title>
                     KYC Details
@@ -247,7 +278,7 @@
 
         <!-- Loan Details -->
 
-        <mat-expansion-panel>
+        <mat-expansion-panel class="mat-elevation-z0">
             <mat-expansion-panel-header expandedHeight="50px">
                 <mat-panel-title>
                     Loan Details
@@ -395,7 +426,7 @@
 
         <!-- Property Details-->
 
-        <mat-expansion-panel expanded="true">
+        <mat-expansion-panel class="mat-elevation-z0">
             <mat-expansion-panel-header expandedHeight="50px">
                 <mat-panel-title>
                     Property Details
@@ -441,7 +472,7 @@
 
         <!--Documents-->
 
-        <mat-expansion-panel>
+        <mat-expansion-panel class="mat-elevation-z0">
             <mat-expansion-panel-header expandedHeight="50px">
                 <mat-panel-title>
                     Documents
@@ -471,7 +502,7 @@
     </mat-accordion>
 
 
-    <app-button-common buttonText="Save the form"></app-button-common>
+    <app-button-common buttonText="Save form" [buttonIcon]="faPlus"></app-button-common>
 
 
 

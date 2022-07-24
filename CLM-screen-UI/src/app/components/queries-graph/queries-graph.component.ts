@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { tick } from '@angular/core/testing';
 import Chart, { Ticks } from 'chart.js/auto';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 
@@ -24,12 +23,15 @@ export class QueriesGraphComponent implements OnInit {
           backgroundColor: [
             '#EF878D'
           ],
-
-          borderWidth: 1
+          borderWidth: 1,
+         
+          
+          barPercentage: 0.9,
+          
         }]
       },
       options: {
-
+        
         indexAxis: 'y',
         scales: {
 
@@ -43,14 +45,13 @@ export class QueriesGraphComponent implements OnInit {
 
           },
           xAxes: {
+            
             display: false,
             grid: {
               display: false,
             },
             grace: '1'
-            // grace: '8%'
-            // min:0,
-            // max:14,
+            
 
 
           }
@@ -62,8 +63,9 @@ export class QueriesGraphComponent implements OnInit {
             align: 'start',
             font: {
               size: 18,
-
-            }
+              weight:'500'
+            },
+            color: '#313942',
           },
           datalabels: {
             anchor: 'end',

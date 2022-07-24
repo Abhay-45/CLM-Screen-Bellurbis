@@ -16,9 +16,8 @@
 .container {
     background: #EFF3F6;
     width: 82%;
-    height: 1500px;
     margin-left: 18%;
-    margin-top: 42px;
+    padding-top: 42px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -32,8 +31,6 @@
     border-radius: 8px;
     margin-top: 30px;
     margin-bottom: 20px;
-
-
 }
 
 .heading-title h3 {
@@ -46,7 +43,6 @@
 }
 
 .applicant-info {
-    /* position: relative; */
     width: 92%;
     height: 147px;
     background: #FFFFFF;
@@ -91,7 +87,7 @@
 }
 
 
-input {
+.form-input input[type= "text"],  .form-input input[type="number"], .form-input input[type="email"], .applicant-info input {
     width: 204px;
     height: 30px;
     background: #EFF3F6;
@@ -101,10 +97,26 @@ input {
     margin-right: 10px;
 }
 
+.form-input input[type="date"]{
+    width: 204px;
+    height: 30px;
+    background: #EFF3F6;
+    border-radius: 8px;
+    padding-left: 15px;
+    border: none;
+    margin-right: 10px;
+    color: #7F8F9D;
+    -webkit-padding-end: 10px;
+}
+
+::-webkit-calendar-picker-indicator{
+    filter: invert(0.5);
+    
+}
+
 .mat-expansion-panel {
    margin: 5px 0px; 
-
-
+   box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.07);
 }
 
 ::ng-deep .mat-expansion-panel-body {
@@ -113,16 +125,12 @@ input {
     background: #FFF9F9;
 }
 
-
-
 .mat-expansion-panel-header {
     background: #FFFFFF;
     box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.07);
     border-radius: 8px;
+    height: 55px;
 }
-
-
-
 
 .cd-form-container {
     width: 100%;
@@ -163,46 +171,79 @@ input {
     color: #5C7893;
 }
 
+.label-radio{
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    display: flex;
+    align-items: center;
+}
+
+
 .form-input input[type="text number"] {
     width: 220px;
     height: 30px;
 }
 
 .form-input input[type="date"] {
-    width: 205px;
-    height: 30px;
-    -webkit-padding-end: 10px;
+    
 }
 
 .form-input input[type="radio"] {
     display: flex;
     align-items: center;
+   
     margin: 0;
     padding: 0;
     font-size: 10px;
     line-height: 14px;
+    size: 10px;
 }
 
 .form-input input[type="file"]{
     display: flex;
     align-items: center;
     margin-left: 200px;
-    background-color: #EFF3F6;
+    background-color: #EFF3F6; 
+}
+
+.radio{
+    display: flex;
     
+    justify-content: space-around;
+    width: 200px;
+    height: 30px;
     
 }
 
-.label-radio{
+.radio input{
+    
+}
+
+.radio p{
+    font-size: 14px;
+    width: auto;
+    padding-left: 8px;
+    color: #7F8F9D;
+    font-size: 14px;
+    line-height: 17px;
+    
+}
+
+.radio-options{
     display: flex;
     align-items: center;
-    margin: 0;
-    padding: 0;
+}
+
+
+
+.form-input[_ngcontent-gmw-c56] input[_ngcontent-mjp-c56]{
+    width: 0;
 }
 
 .add-form-container {
     width: 100%;
     height: 150px;
-   
     padding: 10px 0px;
 }
 
@@ -219,18 +260,16 @@ input {
 .property-form-container{
     width: 100%;
     height: 130px;
-    
 }
 
 .documents-form-container{
     padding-top: 10px;
 }
 
-
-
 app-button-common{
     margin-top: 4px;
     margin-left: 78%;
+    padding-bottom: 10px;
    
 }
 

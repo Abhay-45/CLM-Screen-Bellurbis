@@ -1,52 +1,80 @@
 <div class="container">
+
     <div class="queries">
+
         <div class="all-queries-card">
-            <div class="title">
-                <h1>All Queries</h1>
-            </div>
-            <div class="query-response">
-                <div class="query-answered">
-                    <p>Answered</p>
-                    <i>64</i>
+            <div class="upper">
+                <div class="title">
+                    <h1>All Queries</h1>
                 </div>
-                <div class="query-answered">
-                    <p>Unanswered</p>
-                    <i>22</i>
+    
+                <div class="query-response">
+                    <div class="query-answered">
+                        <p>Answered</p>
+                        <i>64</i>
+                    </div>
+                    <div class="query-answered">
+                        <p>Unanswered</p>
+                        <i>22</i>
+                    </div>
                 </div>
+
             </div>
-        </div>
-        <div class="all-queries-graph">
+            <div class="lower">
+
+            </div>
+            
 
         </div>
+
+        <div class="all-queries-graph">
+            <app-queries-graph></app-queries-graph>
+        </div>
+
     </div>
+
     <mat-accordion class="investor-expand">
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" >
             <mat-expansion-panel-header class="panel-closed-content">
-                <p>Investor 1</p>
+                <mat-panel-title>
+                    Investor 1
+                </mat-panel-title>
                 
             </mat-expansion-panel-header>
             <div class="table-on-expansion"></div>
         </mat-expansion-panel>
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="mat-elevation-z0">
             <mat-expansion-panel-header class="panel-closed-content">
-                <p>Investor 2</p>
+                <mat-panel-title>
+                    Investor 2
+                </mat-panel-title>
                
             </mat-expansion-panel-header>
             <div class="table-on-expansion"></div>
         </mat-expansion-panel>
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="mat-elevation-z0">
             <mat-expansion-panel-header class="panel-closed-content">
-                <p>Investor 3</p>
+                <mat-panel-title>
+                    Investor 3
+                </mat-panel-title>
             
             </mat-expansion-panel-header>
             <div class="table-on-expansion"></div>
         </mat-expansion-panel>
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+
+        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="mat-elevation-z0">
             <mat-expansion-panel-header class="panel-closed-content">
-                <p>Investor 4</p>
+                <mat-panel-title>
+                    Investor 4
+                </mat-panel-title>
           
             </mat-expansion-panel-header>
             <div class="table-on-expansion"></div>
         </mat-expansion-panel>
+
     </mat-accordion>
+
 </div>

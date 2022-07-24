@@ -1,47 +1,63 @@
 <div class="container">
+
     <div class="heading">
-        <h3>Investor Criterias</h3>
-        <button mat-stroked-button>Add New Investor</button>
+        <div class="heading-name">
+            <h3>Investor Criterias</h3>
+        </div>
+        <div class="button">
+            <app-button-common [buttonIcon]="faPlus" buttonText="Add New Investor" (click)="goToInvestorForm()" ></app-button-common>
+        </div>
+        
     </div>
+
     <div class="investers">
+
         <div class="investors-child">
             <div class="investor-name">
                 <p>Investor 1</p>
             </div>
             <div class="product">
-                <p>Protduct Type</p>
+                <p>Product Type</p>
                 <i>HL</i>
             </div>
         </div>
+
         <div class="investors-child">
             <div class="investor-name">
-                <p>Investor 1</p>
+                <p>Investor 2</p>
             </div>
             <div class="product">
-                <p>Protduct Type</p>
+                <p>Product Type</p>
                 <i>HL</i>
             </div>
         </div>
+
         <div class="investors-child">
             <div class="investor-name">
-                <p>Investor 1</p>
+                <p>Investor 3</p>
             </div>
             <div class="product">
-                <p>Protduct Type</p>
+                <p>Product Type</p>
                 <i>HL</i>
             </div>
         </div>
+
         <div class="investors-child">
             <div class="investor-name">
-                <p>Investor 1</p>
+                <p>Investor 4</p>
             </div>
             <div class="product">
-                <p>Protduct Type</p>
+                <p>Product Type</p>
                 <i>HL</i>
             </div>
         </div>
+
     </div>
+
     <div class="table-investors">
 
     </div>
+
 </div>
+
+

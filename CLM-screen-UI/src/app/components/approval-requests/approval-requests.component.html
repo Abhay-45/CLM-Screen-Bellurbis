@@ -1,16 +1,20 @@
 <div class="container">
+
     <div class="approval-card">
         <div class="heading-section">
             <h1 class="heading">Approval Requests</h1>
             <span class="num-approval">45</span>
         </div>
+
         <mat-button-toggle-group #toggleBtn="matButtonToggleGroup" name="fontStyle" aria-label="Font Style">
-            <mat-button-toggle [disableRipple]="true" class="toggle-investors" value="investor_1">Invester 1</mat-button-toggle>
-            <mat-button-toggle [disableRipple]="true" class="toggle-investors" value="investor_2">Invester 2</mat-button-toggle>
-            <mat-button-toggle [disableRipple]="true"class="toggle-investors" value="investor_3">Invester 3</mat-button-toggle>
-            <mat-button-toggle [disableRipple]="true"class="toggle-investors" value="investor_4">Invester 4</mat-button-toggle>
-          </mat-button-toggle-group>
+            <mat-button-toggle [disableRipple]="true" class="toggle-investors" value="investor_1">Investor 1</mat-button-toggle>
+            <mat-button-toggle [disableRipple]="true" class="toggle-investors" value="investor_2">Investor 2</mat-button-toggle>
+            <mat-button-toggle [disableRipple]="true"class="toggle-investors" value="investor_3">Investor 3</mat-button-toggle>
+            <mat-button-toggle [disableRipple]="true"class="toggle-investors" value="investor_4">Investor 4</mat-button-toggle>
+        </mat-button-toggle-group>
+
     </div>
+
     <div>
         <br/>
         {{toggleBtn.value}}

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Input, } from '@angular/core';
+import { IconDefinition } from '@fortawesome/free-brands-svg-icons';
 
 
 @Component({
@@ -11,7 +12,8 @@ export class ButtonCommonComponent implements OnInit {
 
   
   @Input() buttonText: string;
-  @Input() buttonIcon: string;
+  @Input() buttonIcon: IconDefinition ;
+ 
   
 
   constructor() { 

@@ -1,0 +1,25 @@
+<div class="container">
+    <div class="upper-div">
+        <div class="upper-left">
+            <div class="heading">
+                <span id="upload-new-loan">Upload New Loan</span>
+                <span>Number of Loans uploaded<span id="total-loans-number">0</span></span>
+                
+            </div>
+        </div>
+        <div class="upper-middle">
+            <div class="button-1">
+                <app-button-common buttonText="Upload Excel" [buttonIcon]="faArrow"></app-button-common>
+            </div>
+
+        </div>
+        <div class="upper-right">
+        
+            <div class="button-2">
+                <app-button-common buttonText="Create Manually" [buttonIcon]="faPen" (click)="goToLoanForm()"></app-button-common>
+            </div>
+            
+        </div>
+        
+    </div>
+</div>
