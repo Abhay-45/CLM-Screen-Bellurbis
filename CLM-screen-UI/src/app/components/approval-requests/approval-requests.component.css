@@ -97,3 +97,26 @@ mat-button-toggle-group {
     box-shadow: none;
     border: none;
 }
+
+.investor-info {
+    position: relative;
+    width: 980px;
+    height: 51px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.07);
+    border-radius: 8px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.investor-title-toggle {
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+
+    color: #313942;
+}

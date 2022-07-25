@@ -1,9 +1,10 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import {MatTableDataSource, MatTableModule, } from '@angular/material/table';
 import {Criteria} from '../../services/invester-criteria';
-import {TRANSACTIONS} from '../../services/mock-transactions';
+import {REQUESTS} from '../../services/mock-requests';
 
-const DATA: any = TRANSACTIONS;
+
+const DATA: any = REQUESTS;
 
 @Component({
   selector: 'app-approval-request-table',
