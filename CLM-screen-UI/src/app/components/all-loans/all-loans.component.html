@@ -32,34 +32,32 @@
     </div>
     
     <mat-accordion class="investor-expand">
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="mat-elevation-z0">
-            <mat-expansion-panel-header class="panel-closed-content">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header expandedHeight= "50px" class="panel-closed-content">
                 <mat-panel-title>
                    Investor 1 
                 </mat-panel-title>
                 <mat-panel-description>
                     4 loans | 1.6 Cr
-                </mat-panel-description>
-              
+                </mat-panel-description>          
             </mat-expansion-panel-header>
-            <div class="table-on-expansion"></div>
+            <app-loan-table></app-loan-table>
         </mat-expansion-panel>
 
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="mat-elevation-z0">
-            <mat-expansion-panel-header class="panel-closed-content">
+        <mat-expansion-panel>
+            <mat-expansion-panel-header expandedHeight= "50px" class="panel-closed-content">
                 <mat-panel-title>
                    Investor 2 
                 </mat-panel-title>
                 <mat-panel-description>
                     4 loans | 1.6 Cr
                 </mat-panel-description>
-              
             </mat-expansion-panel-header>
-            <div class="table-on-expansion"></div>
+            <app-loan-table></app-loan-table>
         </mat-expansion-panel>
 
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="mat-elevation-z0">
-            <mat-expansion-panel-header class="panel-closed-content">
+        <mat-expansion-panel >
+            <mat-expansion-panel-header expandedHeight= "50px" class="panel-closed-content">
                 <mat-panel-title>
                    Investor 3 
                 </mat-panel-title>
@@ -68,23 +66,20 @@
                 </mat-panel-description>
               
             </mat-expansion-panel-header>
-            <div class="table-on-expansion"></div>
+            <app-loan-table></app-loan-table>
         </mat-expansion-panel>
 
-        <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" class="mat-elevation-z0">
-            <mat-expansion-panel-header class="panel-closed-content">
+        <mat-expansion-panel >
+            <mat-expansion-panel-header expandedHeight= "50px" class="panel-closed-content">
                 <mat-panel-title>
                    Investor 4 
                 </mat-panel-title>
                 <mat-panel-description>
                     4 loans | 1.6 Cr
                 </mat-panel-description>
-              
             </mat-expansion-panel-header>
-            <div class="table-on-expansion"></div>
+            <app-loan-table></app-loan-table>
         </mat-expansion-panel>
-
-
     </mat-accordion>
 
 </div>

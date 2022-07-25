@@ -50,6 +50,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import {MatInputModule} from '@angular/material/input';
 import { ApprovalRequestTableComponent } from './components/approval-request-table/approval-request-table.component';
 import { DealHistoryTableComponent } from './components/deal-history-table/deal-history-table.component';
+import { LoanTableComponent } from './components/loan-table/loan-table.component';
 
 
 @NgModule({
@@ -90,7 +91,8 @@ import { DealHistoryTableComponent } from './components/deal-history-table/deal-
     UploadLoansBodyComponent,
     ApprovalRequestsComponent,
     ApprovalRequestTableComponent,
-    DealHistoryTableComponent
+    DealHistoryTableComponent,
+    LoanTableComponent
     
 
   ],
