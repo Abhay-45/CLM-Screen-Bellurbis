@@ -27,6 +27,7 @@
     background: #FFFFFF;
     border-radius: 8px;
     margin-top: 45px;
+    margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -120,3 +121,39 @@ mat-button-toggle-group {
 
     color: #313942;
 }
+
+mat-panel-title{
+    flex-grow: 0;
+    color: #313942;
+    font-size: 14px;
+    line-height: 17px;
+    
+}
+
+mat-panel-description{
+    color: #F66B4E;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+
+.mat-expansion-panel {
+    margin: 5px 0px; 
+    box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.07);
+ }
+ 
+ ::ng-deep .mat-expansion-panel-body {
+     padding: 0;
+     margin: 0;
+     background: #FFF9F9;
+ }
+ 
+ 
+ 
+.mat-expansion-panel-header {
+     background: #FFFFFF;
+     box-shadow: 0px 4px 21px rgba(0, 0, 0, 0.07);
+     border-radius: 8px;
+     height: 55px;
+ }

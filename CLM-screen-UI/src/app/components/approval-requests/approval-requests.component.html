@@ -15,11 +15,25 @@
 
     </div>
 
-    <div class="investor-info">
-        <h3 class="investor-title-toggle">{{toggleBtn.value}}</h3>
-    </div>
-    <div>
-        <app-approval-request-table></app-approval-request-table>
-    </div>
+    <mat-accordion class="investor-expand">
+        <mat-expansion-panel  class="mat-elevation-z0" expanded="true">
+            <mat-expansion-panel-header class="panel-closed-content">
+                <mat-panel-title>
+                   Investor 1 
+                </mat-panel-title>
+                <mat-panel-description>
+                    4 loans | 1.6 Cr
+                </mat-panel-description>
+              
+            </mat-expansion-panel-header>
+            <div>
+                <app-approval-request-table></app-approval-request-table>
+            </div>
+            
+        </mat-expansion-panel>
+   </mat-accordion>
+
+    
+    
 </div>
 

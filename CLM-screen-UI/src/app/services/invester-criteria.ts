@@ -1,8 +1,8 @@
 export interface Criteria{
-    criteria: string;
-    investor_1:string;
-    investor_2:string;
-    investor_3:string;
-    investor_4: string;
+    Criterias: string;
+    Investor_1:string;
+    Investor_2:string;
+    Investor_3:string;
+    Investor_4: string;
 
 }

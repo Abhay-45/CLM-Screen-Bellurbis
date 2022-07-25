@@ -1,6 +1,5 @@
 import { Component, OnInit, Input, ViewChild } from '@angular/core';
 import {MatTableDataSource, MatTableModule, } from '@angular/material/table';
-import {Criteria} from '../../services/invester-criteria';
 import {TRANSACTIONS} from '../../services/mock-transactions';
 
 const DATA: any = TRANSACTIONS;
