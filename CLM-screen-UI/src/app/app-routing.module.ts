@@ -11,7 +11,7 @@ import { QueriesComponent } from './pages/queries/queries.component';
 import { UploadLoansComponent } from './pages/upload-loans/upload-loans.component';
 
 const routes: Routes = [
-  // {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
+  {path: '', redirectTo: 'dashboard', pathMatch: 'full'},
   {path: 'dashboard', component: DashboardComponent},
   {path: 'investors', component: InvestorsComponent},
   {path: 'all-loans', component: AllLoansPageComponent},
